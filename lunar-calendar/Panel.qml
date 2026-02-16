@@ -268,7 +268,7 @@ Item {
                 const prevMonthDays = prevMonth.getDate();
                 for (var i = daysBefore - 1; i >= 0; i--) {
                   const day = prevMonthDays - i;
-                  const lunarInfo = CalendarApi.getDateBySolar(month === 0 ? year - 1 : year, month - 1, day);
+                  const lunarInfo = CalendarApi.getDateBySolar(month === 0 ? year - 1 : year, month, day);
                   days.push({
                               "day": day,
                               "month": month - 1,
@@ -283,7 +283,7 @@ Item {
                 for (var day = 1; day <= daysInMonth; day++) {
                   const date = new Date(year, month, day);
                   const isToday = date.getFullYear() === today.getFullYear() && date.getMonth() === today.getMonth() && date.getDate() === today.getDate();
-                  const lunarInfo = CalendarApi.getDateBySolar(year, month, day);
+                  const lunarInfo = CalendarApi.getDateBySolar(year, month + 1, day);
                   days.push({
                               "day": day,
                               "month": month,
@@ -296,7 +296,7 @@ Item {
       
                 // Next month days
                 for (var i = 1; i <= daysAfter; i++) {
-                  const lunarInfo = CalendarApi.getDateBySolar(month === 11 ? year + 1 : year, month + 1, i);
+                  const lunarInfo = CalendarApi.getDateBySolar(month === 11 ? year + 1 : year, month + 2, i);
                   days.push({
                               "day": i,
                               "month": month + 1,
@@ -361,14 +361,14 @@ Item {
       
                     // Festival indicator dots
                     Row {
-                      visible: CalendarApi.getDateBySolar(modelData.year, modelData.month, modelData.day)["festival"].length !== 0
+                      visible: CalendarApi.getDateBySolar(modelData.year, modelData.month + 1, modelData.day)["festival"].length !== 0
                       spacing: 0
                       anchors.horizontalCenter: parent.horizontalCenter
                       anchors.top: parent.bottom
                       anchors.topMargin: Style.marginXS
 
                       Repeater {
-                        model: CalendarApi.getDateBySolar(modelData.year, modelData.month, modelData.day)["festival"].split(" ")
+                        model: CalendarApi.getDateBySolar(modelData.year, modelData.month + 1, modelData.day)["festival"].split(" ")
 
                         Rectangle {
                           width: 4
@@ -384,7 +384,7 @@ Item {
                       hoverEnabled: true
 
                       onEntered: {
-                        const festivals = CalendarApi.getDateBySolar(modelData.year, modelData.month, modelData.day)["festival"].split(" ");
+                        const festivals = CalendarApi.getDateBySolar(modelData.year, modelData.month + 1, modelData.day)["festival"].split(" ");
                         if (festivals.length > 0) {
                           const summaries = festivals.join("\n");
                           TooltipService.show(parent, summaries);

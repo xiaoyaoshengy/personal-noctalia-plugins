@@ -58,7 +58,7 @@ Item {
           const year = Time.now.getFullYear();
           const month = Time.now.getMonth();
           const day = Time.now.getDate();
-          const result = CalendarApi.getDateBySolar(year, month, day);
+          const result = CalendarApi.getDateBySolar(year, month + 1, day);
           return `${result["gzYearZH"]}年【${result["animal"]}】${result["lMonthZH"]}${result["lDayZH"]}`
         }
         color: mouseArea.containsMouse ? Color.mOnHover : Color.mOnSurface

@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "plugins": [
+    {
+      "id": "lunar-calendar",
+      "name": "Lunar Calendar",
+      "version": "1.0.0",
+      "official": false,
+      "author": "xiaoyaosheny",
+      "description": "Lunar Calendar",
+      "repository": "https://github.com/xiaoyaoshengy/lunar-calendar",
+      "minNoctaliaVersion": "3.6.0",
+      "license": "MIT",
+      "tags": [],
+      "lastUpdated": "2026-02-15T18:29:30+08:00"
+    }
+  ]
+}

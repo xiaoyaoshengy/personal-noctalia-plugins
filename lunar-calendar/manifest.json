@@ -1,0 +1,25 @@
+{
+  "id": "lunar-calendar",
+  "name": "Lunar Calendar",
+  "version": "1.1.0",
+  "minNoctaliaVersion": "3.6.0",
+  "author": "xiaoyaosheny",
+  "license": "MIT",
+  "repository": "https://github.com/xiaoyaoshengy/lunar-calendar",
+  "description": "Lunar Calendar",
+  "entryPoints": {
+    "barWidget": "BarWidget.qml",
+    "panel": "Panel.qml"
+  },
+  "tags": [
+    "Bar",
+    "Panel",
+    "Calendar"
+  ],
+  "dependencies": {
+    "plugins": []
+  },
+  "metadata": {
+    "defaultSettings": {}
+  }
+}

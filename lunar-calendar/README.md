@@ -6,8 +6,9 @@ A lunar calendar plugin for [Noctalia-Shell](https://github.com/noctalia-dev/noc
 
 ## Features
 
-- **Bar Widget**: Display today's information in lunar calendar;
-- **Panel**: A lunar calendar panel similar to the calendar of Noctalia-Shell. Add the information below the number of every day.
+- **Bar Widget**: Display today's information in lunar calendar
+- **Panel**: A lunar calendar panel similar to the calendar of Noctalia-Shell. Add the information below the number of every day
+- Support festivals
 
 ## Installation
 
@@ -22,3 +23,7 @@ A lunar calendar plugin for [Noctalia-Shell](https://github.com/noctalia-dev/noc
 
 - [Noctalia-Shell](https://github.com/noctalia-dev/noctalia-shell)
 - [mumuy/calendar](https://github.com/mumuy/calendar)
+
+## License
+
+MIT

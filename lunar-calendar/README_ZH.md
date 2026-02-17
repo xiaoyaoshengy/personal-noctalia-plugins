@@ -8,6 +8,7 @@
 
 - **顶栏工具**：展示当前日期的农历信息
 - **面板**：仿Noctalia-Shell日历的农历面板，增加公历日期下的农历信息
+- 支持节日
 
 ## 安装方式
 
@@ -22,3 +23,7 @@
 
 - [Noctalia-Shell](https://github.com/noctalia-dev/noctalia-shell)
 - [mumuy/calendar](https://github.com/mumuy/calendar)
+
+## 许可证
+
+MIT

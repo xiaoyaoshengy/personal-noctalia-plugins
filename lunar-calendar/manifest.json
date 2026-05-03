@@ -5,13 +5,17 @@
   "minNoctaliaVersion": "3.6.0",
   "author": "xiaoyaosheny",
   "license": "MIT",
-  "repository": "https://github.com/xiaoyaoshengy/lunar-calendar",
+  "repository": "https://github.com/xiaoyaoshengy/personal-noctalia-plugins",
   "description": "Lunar Calendar",
   "entryPoints": {
     "barWidget": "BarWidget.qml",
     "panel": "Panel.qml"
   },
-  "tags": ["Bar", "Panel", "Calendar"],
+  "tags": [
+    "Bar",
+    "Panel",
+    "Calendar"
+  ],
   "dependencies": {
     "plugins": []
   },
